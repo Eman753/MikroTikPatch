@@ -3,3 +3,7 @@ __pycache__/
 venv/
 app/
 test_*.py
+eddsa_private_key.pem
+eddsa_public_key.pem
+kcdsa_private_key.pem
+kcdsa_public_key.pem

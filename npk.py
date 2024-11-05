@@ -339,6 +339,8 @@ if __name__=='__main__':
     elif args.command == 'verify':
         npk = NovaPackage.load(args.input)
         print(f'Verifying {args.input} ',end="")
+        print(kcdsa_private_key)
+        print(eddsa_public_key)
         if npk.verify(kcdsa_public_key,eddsa_public_key):
             print('Valid')
             exit(0)
